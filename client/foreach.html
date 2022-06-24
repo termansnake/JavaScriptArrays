@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const products = [
+            {title: 'Burger',price: 100},
+            {title: 'Pizza',price: 50},
+        ];
+        const app = document.getElementById('app');
+        products.forEach(product => {
+            app.innerHTML += `<li>${product.title} - ${product.price} </li>`;
+        })
+      
+    </script>
+    <div id="work"></div>
+    <script>
+        const works = [
+        {title: 'Diseñar Header', status:'Complete' },
+        {title: 'Diseñar Main', status: 'Incomplete'},
+        {title: 'Diseñar Footer', status: 'Incomplete'},
+    ];
+    const work = document.getElementById('work');
+    works.forEach(working => {
+        app.innerHTML += `<li>${working.title} - ${working.status} </li>`;
+    })
+    </script>
+</body>
+</html>
